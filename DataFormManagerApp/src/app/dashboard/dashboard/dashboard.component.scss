@@ -1,0 +1,100 @@
+table {
+  width: 100%;
+  background-color:rgb(115, 127, 131);
+  text: snow;
+}
+.buttons {
+  background-color: #587f8f;
+  border: slategrey;
+  color: white;
+  padding: 2px 5px 4px 5px;
+  text-align: center;
+  width: 90px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px ;
+  height: 1.7em;
+  margin-left: 100px;
+  border-radius: 4px 4px 4px 4px;
+  margin-bottom: 10px; 
+}
+button {
+  background-color: #587f8f;
+  border: slategrey;
+  color: white;
+  padding: 2px 5px 4px 5px;
+  text-align: center;
+  width: 90px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  height: 2em;
+  border-radius: 4px 4px 4px 4px;
+  margin-bottom: 10px; 
+}
+
+.mat-header-cell{
+  color: snow;
+}
+.mat-cell{
+  color: snow;
+}
+
+.mat-elevation-z8 {
+    margin: 0 0 2em 0;
+    list-style-type: unit($number: 100);
+    padding: 0;
+    width: 50em;
+  }
+
+  .mat-elevation-z8 mat-row:hover {
+    color: rgb(199, 196, 187);
+    background-color: rgba(225, 226, 223, 0.342);
+    left: .1em;
+  }
+  .mat-elevation-z8 mat-row.selected {
+    background-color: rgb(233, 68, 27);
+    color: rgb(221, 26, 26);
+  }
+  // .mat-elevation-z8 mat-row.selected:hover {
+  //   background-color: #BBD8DC;
+  //   color: white;
+  // }
+
+
+  .extendedview {
+    margin: 0 0 2em 0;
+    list-style-type: unit($number: 100);
+    padding: 0;
+    width: 25em;
+  }
+  .extendedview li {
+    //cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color:rgb(182, 195, 201);
+    margin: .5em;
+    padding: .3em 0;
+    height: 2.4em;
+    border-radius: 4px;
+  }
+
+
+  .extendedview .badge {
+    display: inline-block;
+    font-size: small;
+    text-align: left;
+    text-indent: 10px;
+    width:170px;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color:#587f8f;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 2.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
+  

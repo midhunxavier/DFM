@@ -1,0 +1,26 @@
+<nav class="navbar navbar-light bg-info justify-content-between">
+
+  <a class="navbar-brand"><span class="entypo-dribbble"></span> DFM</a>
+
+  <ul class="nav justify-content-end" *ngIf="isUserLoggedIn()">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Welcome {{name}}</a>
+    </li>
+    <li class="nav-item" *ngIf="isUserNotConnectedChbase()">
+      <a class="nav-link" href="http://core.shell.dev39.grcdev.com/signin.aspx?appid=d13d9244-8f0c-44e7-8498-682dc9befc23&redirect=http%3A%2F%2Fdataformmanager.dev39.grcdev.com%2Fapi%2Flogin%2Fchbase&actionsqs=AppUserId"> Connect to CHBase</a>
+    </li>
+    <li class="nav-item" *ngIf="isUserConnectedChbase()">
+      <a class="nav-link"  href="#"> Connected to CHBase</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/">Dashboard</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/profile">Profile</a>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="btn btn-primary" (click)="Logout()">Logout</button>
+
+    </li>
+  </ul>
+</nav>

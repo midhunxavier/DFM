@@ -1,0 +1,6 @@
+﻿
+CREATE PROCEDURE [dbo].[Proc_RCKRUser_GetUserList]
+AS 
+BEGIN
+SELECT * FROM RCKRUser 
+END
